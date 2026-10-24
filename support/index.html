@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support &amp; Contact · Hopla</title>
+  <link rel="icon" href="../hopla_mark.png">
+  <style>
+    :root {
+      --ink: #0e0b1f; --mist: #f7f5ff; --violet: #6c4dff; --line: #e6e1fa; --muted: #5d5a73; --card-bg: #ffffff;
+      --gradient: linear-gradient(120deg, #6c4dff, #ff3d8b 60%, #ffb020);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --ink: #f1eeff; --mist: #0b0918; --line: #272147; --muted: #b4afcf; --card-bg: #141126; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: var(--ink); background: var(--mist); }
+    header { background: var(--gradient); color: #fff; }
+    .top { max-width: 860px; margin: 0 auto; padding: 24px 20px 32px; }
+    .brand-bar { display: flex; align-items: center; justify-content: space-between; }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 800; font-size: 22px; color: #fff; text-decoration: none; }
+    .brand img { width: 36px; height: 36px; border-radius: 8px; }
+    h1 { font-size: 32px; line-height: 1.2; margin: 20px 0 6px; }
+    nav { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 18px; }
+    nav a { color: #fff; text-decoration: none; font-size: 14px; font-weight: 600; padding: 6px 14px; border-radius: 999px; background: rgba(255,255,255,0.16); }
+    nav a.active { background: #fff; color: var(--ink); }
+    main { max-width: 860px; margin: 0 auto; padding: 30px 20px 60px; }
+    .content-box { background: var(--card-bg); border: 1px solid var(--line); border-radius: 20px; padding: 40px; }
+    h2 { font-size: 22px; margin: 24px 0 10px; color: var(--ink); }
+    .contact-card {
+      background: rgba(108,77,255,0.06);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 24px;
+      margin: 20px 0;
+    }
+    .contact-email {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--violet);
+      word-break: break-all;
+    }
+    footer { border-top: 1px solid var(--line); padding: 30px 20px; text-align: center; font-size: 14px; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="top">
+      <div class="brand-bar">
+        <a href="../" class="brand">
+          <img src="../hopla_mark.png" alt="Hopla Icon">
+          <span>Hopla</span>
+        </a>
+      </div>
+      <h1>Centre d'Assistance &amp; Support</h1>
+      <nav>
+        <a href="../">Accueil</a>
+        <a href="../privacy/">Confidentialité</a>
+        <a href="../terms/">Conditions</a>
+        <a href="../child-safety/">Protection des mineurs</a>
+        <a href="./" class="active">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="content-box">
+      <h2>Besoin d'aide ou une question sur Hopla ?</h2>
+      <p>Notre équipe technique est à votre écoute pour toute demande concernant le fonctionnement du réseau maillé, la confidentialité, vos achats Hopla+ ou les signalements de sécurité.</p>
+
+      <div class="contact-card">
+        <p style="margin-bottom: 8px; font-weight: 600;">Courriel du support officiel :</p>
+        <a href="mailto:support@vsptech.host" class="contact-email">support@vsptech.host</a>
+        <p style="margin-top: 12px; font-size: 14px; color: var(--muted);">Délai moyen de réponse : sous 24 à 48 heures ouvrables.</p>
+      </div>
+
+      <h2>Questions Fréquentes (FAQ)</h2>
+      <p><b>Comment tester l'application ?</b><br>
+      Hopla nécessite que le Bluetooth soit activé sur votre téléphone. Pour discuter avec vos proches sans réseau cellulaire ni Wi-Fi Internet, vos amis doivent également avoir ouvert Hopla à portée Bluetooth (10 à 100 mètres). Chaque appareil supplémentaire relaie les messages plus loin.</p>
+
+      <p style="margin-top: 16px;"><b>Mes messages sont-ils enregistrés sur Internet ?</b><br>
+      Non. Hopla ne possède aucun serveur central de messagerie. Vos messages sont chiffrés de bout en bout et n'existent que dans la mémoire de votre téléphone et de celui de votre destinataire.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 VSP TECH. All rights reserved. Hopla Messenger.</p>
+  </footer>
+</body>
+</html>

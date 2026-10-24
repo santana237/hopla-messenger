@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Protection des Mineurs · Hopla</title>
+  <link rel="icon" href="../hopla_mark.png">
+  <style>
+    :root {
+      --ink: #0e0b1f; --mist: #f7f5ff; --violet: #6c4dff; --line: #e6e1fa; --muted: #5d5a73; --card-bg: #ffffff;
+      --gradient: linear-gradient(120deg, #6c4dff, #ff3d8b 60%, #ffb020);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --ink: #f1eeff; --mist: #0b0918; --line: #272147; --muted: #b4afcf; --card-bg: #141126; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: var(--ink); background: var(--mist); }
+    header { background: var(--gradient); color: #fff; }
+    .top { max-width: 860px; margin: 0 auto; padding: 24px 20px 32px; }
+    .brand-bar { display: flex; align-items: center; justify-content: space-between; }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 800; font-size: 22px; color: #fff; text-decoration: none; }
+    .brand img { width: 36px; height: 36px; border-radius: 8px; }
+    .lang-toggle { color: #fff; font-size: 14px; font-weight: 700; cursor: pointer; background: rgba(255,255,255,0.22); border: 1px solid rgba(255,255,255,0.3); padding: 6px 14px; border-radius: 999px; }
+    h1 { font-size: 32px; line-height: 1.2; margin: 20px 0 6px; }
+    nav { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 18px; }
+    nav a { color: #fff; text-decoration: none; font-size: 14px; font-weight: 600; padding: 6px 14px; border-radius: 999px; background: rgba(255,255,255,0.16); }
+    nav a.active { background: #fff; color: var(--ink); }
+    main { max-width: 860px; margin: 0 auto; padding: 30px 20px 60px; }
+    .content-box { background: var(--card-bg); border: 1px solid var(--line); border-radius: 20px; padding: 40px; }
+    h2 { font-size: 22px; margin: 30px 0 10px; color: var(--ink); border-bottom: 2px solid var(--line); padding-bottom: 6px; }
+    h2:first-of-type { margin-top: 10px; }
+    .note { border: 1px solid var(--line); border-radius: 14px; padding: 16px 20px; background: rgba(108,77,255,0.08); margin: 20px 0; }
+    .muted { color: var(--muted); font-size: 14px; }
+    ul { margin: 12px 0 20px 24px; }
+    li { margin: 6px 0; }
+    a { color: var(--violet); }
+    footer { border-top: 1px solid var(--line); padding: 30px 20px; text-align: center; font-size: 14px; color: var(--muted); }
+    .lang-section { display: none; }
+    .lang-section.active { display: block; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="top">
+      <div class="brand-bar">
+        <a href="../" class="brand">
+          <img src="../hopla_mark.png" alt="Hopla Icon">
+          <span>Hopla</span>
+        </a>
+        <button id="langBtn" class="lang-toggle" onclick="toggleLang()">English / Français</button>
+      </div>
+      <h1 id="pageTitle">Protection des Mineurs</h1>
+      <nav>
+        <a href="../">Accueil</a>
+        <a href="../privacy/">Confidentialité</a>
+        <a href="../terms/">Conditions</a>
+        <a href="./" class="active">Protection des mineurs</a>
+        <a href="../support/">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="content-box">
+      <div id="section-fr" class="lang-section active">
+        <p class="muted">Hopla, éditée par VSP TECH · Normes de sécurité des enfants</p>
+        <div class="note">
+          <b>Tolérance Zéro :</b> Hopla interdit rigoureusement l'exploitation et les abus sexuels visant des enfants (CSAE / CSAM) sous toutes leurs formes. Tout compte impliqué fait l'objet d'un bannissement immédiat et d'un signalement systématique auprès des autorités judiciaires.
+        </div>
+
+        <h2>1. Procédure de signalement dans l'application</h2>
+        <p>Les utilisateurs disposent d'un bouton de signalement accessible à tout moment :</p>
+        <ul>
+          <li>Appui long sur un message &gt; <b>Signaler</b></li>
+          <li>Dans le profil d'un contact ou la liste des appareils proches &gt; <b>Signaler</b></li>
+          <li>Dans <i>Réglages &gt; Sécurité &gt; Signaler un problème</i></li>
+        </ul>
+        <p>Sélectionnez le motif <i>Exploitation ou abus envers un mineur</i>. L'utilisateur est immédiatement bloqué localement et le rapport est prioritaire.</p>
+
+        <h2>2. Coopération avec les autorités</h2>
+        <p>Nous collaborons étroitement avec le Centre canadien de protection de l'enfance (<a href="https://www.cybertip.ca" target="_blank">Cybertip.ca</a>), le <a href="https://report.cybertip.org" target="_blank">NCMEC</a> et les services de police compétents.</p>
+        <p>Contact d'urgence pour la sécurité : <a href="mailto:support@vsptech.host">support@vsptech.host</a>.</p>
+      </div>
+
+      <div id="section-en" class="lang-section">
+        <p class="muted">Hopla, published by VSP TECH · Child Safety Standards</p>
+        <div class="note">
+          <b>Zero Tolerance:</b> Hopla strictly forbids child sexual abuse and exploitation (CSAE) and child sexual abuse material (CSAM). Violating nodes are permanently banned across the mesh network and reported to legal authorities.
+        </div>
+
+        <h2>1. How to Report within Hopla</h2>
+        <ul>
+          <li>Long-press any message &gt; <b>Report</b></li>
+          <li>On a contact's card or the "Around me" list &gt; <b>Report</b></li>
+          <li>Go to <i>Settings &gt; Safety &gt; Report an issue</i></li>
+        </ul>
+        <p>Select <i>Child sexual abuse or exploitation</i>. The user is blocked on-device and our moderation team investigates the submission as top priority.</p>
+
+        <h2>2. Law Enforcement Cooperation</h2>
+        <p>We work in full compliance with Canadian Centre for Child Protection (<a href="https://www.cybertip.ca" target="_blank">Cybertip.ca</a>), the <a href="https://report.cybertip.org" target="_blank">NCMEC CyberTipline</a>, and local law enforcement.</p>
+        <p>Safety contact: <a href="mailto:support@vsptech.host">support@vsptech.host</a>.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 VSP TECH. All rights reserved. Hopla Messenger.</p>
+  </footer>
+
+  <script>
+    let currentLang = 'fr';
+    function toggleLang() {
+      currentLang = currentLang === 'fr' ? 'en' : 'fr';
+      document.getElementById('section-fr').classList.toggle('active', currentLang === 'fr');
+      document.getElementById('section-en').classList.toggle('active', currentLang === 'en');
+      document.getElementById('pageTitle').textContent = currentLang === 'fr' ? "Protection des Mineurs" : "Child Safety Standards";
+      document.documentElement.lang = currentLang;
+    }
+  </script>
+</body>
+</html>

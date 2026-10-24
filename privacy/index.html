@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Politique de Confidentialité · Hopla</title>
+  <link rel="icon" href="../hopla_mark.png">
+  <style>
+    :root {
+      --ink: #0e0b1f;
+      --mist: #f7f5ff;
+      --violet: #6c4dff;
+      --line: #e6e1fa;
+      --muted: #5d5a73;
+      --card-bg: #ffffff;
+      --gradient: linear-gradient(120deg, #6c4dff, #ff3d8b 60%, #ffb020);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --ink: #f1eeff;
+        --mist: #0b0918;
+        --line: #272147;
+        --muted: #b4afcf;
+        --card-bg: #141126;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--mist);
+    }
+    header { background: var(--gradient); color: #fff; }
+    .top { max-width: 860px; margin: 0 auto; padding: 24px 20px 32px; }
+    .brand-bar { display: flex; align-items: center; justify-content: space-between; }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 800; font-size: 22px; color: #fff; text-decoration: none; }
+    .brand img { width: 36px; height: 36px; border-radius: 8px; }
+    .lang-toggle {
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      background: rgba(255,255,255,0.22);
+      border: 1px solid rgba(255,255,255,0.3);
+      padding: 6px 14px;
+      border-radius: 999px;
+      transition: background 0.2s;
+    }
+    .lang-toggle:hover { background: rgba(255,255,255,0.35); }
+    h1 { font-size: 32px; line-height: 1.2; margin: 20px 0 6px; }
+    nav { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 18px; }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.16);
+      transition: background 0.2s;
+    }
+    nav a:hover { background: rgba(255,255,255,0.28); }
+    nav a.active { background: #fff; color: var(--ink); }
+    main { max-width: 860px; margin: 0 auto; padding: 30px 20px 60px; }
+    .content-box {
+      background: var(--card-bg);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+    }
+    h2 { font-size: 22px; margin: 32px 0 10px; color: var(--ink); border-bottom: 2px solid var(--line); padding-bottom: 6px; }
+    h2:first-of-type { margin-top: 10px; }
+    p { margin-bottom: 14px; }
+    a { color: var(--violet); }
+    .note {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 16px 20px;
+      background: rgba(108,77,255,0.08);
+      margin: 20px 0;
+      font-size: 15px;
+    }
+    .muted { color: var(--muted); font-size: 14px; }
+    ul { margin: 12px 0 20px 24px; }
+    li { margin: 6px 0; }
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    .lang-section { display: none; }
+    .lang-section.active { display: block; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="top">
+      <div class="brand-bar">
+        <a href="../" class="brand">
+          <img src="../hopla_mark.png" alt="Hopla Icon">
+          <span>Hopla</span>
+        </a>
+        <button id="langBtn" class="lang-toggle" onclick="toggleLang()">English / Français</button>
+      </div>
+      <h1 id="pageTitle">Politique de Confidentialité</h1>
+      <nav>
+        <a href="../">Accueil</a>
+        <a href="./" class="active">Confidentialité</a>
+        <a href="../terms/">Conditions</a>
+        <a href="../child-safety/">Protection des mineurs</a>
+        <a href="../support/">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="content-box">
+      <!-- SECTION FRANÇAISE -->
+      <div id="section-fr" class="lang-section active">
+        <p class="muted">Hopla, application publiée par VSP TECH · Dernière mise à jour : 24 octobre 2026</p>
+        
+        <div class="note">
+          <b>En bref :</b> Aucun compte, aucun numéro de téléphone, aucune publicité, aucune collecte statistique, aucun traceur tiers. Vos messages sont chiffrés de bout en bout et n'existent que sur vos téléphones. Notre infrastructure ne reçoit jamais vos messages privés.
+        </div>
+
+        <h2>1. Qui nous sommes</h2>
+        <p>L'application Hopla est conçue et éditée par <b>VSP TECH</b>, entreprise basée au Québec (Canada).<br>
+        Courriel de contact officiel : <a href="mailto:support@vsptech.host">support@vsptech.host</a>.</p>
+
+        <h2>2. Données stockées localement sur votre appareil</h2>
+        <p>Hopla fonctionne selon le principe du strict cloisonnement local. Se trouvent exclusivement sur votre appareil :</p>
+        <ul>
+          <li>Votre profil public local (surnom, avatar choisi et couleur).</li>
+          <li>Vos clés cryptographiques privées (stockées dans le trousseau sécurisé Keychain sous iOS / KeyStore sous Android).</li>
+          <li>Votre carnet de contacts locaux, historiques de messages, pièces jointes et notes vocales.</li>
+          <li>Vos préférences et l'état de votre abonnement Hopla+ (validé directement par l'App Store d'Apple).</li>
+        </ul>
+        <p>Nous ne possédons aucun double ni aucune sauvegarde de ces données. Désinstaller l'application ou utiliser la fonction <i>Réglages &gt; Tout effacer</i> détruit irrévocablement l'ensemble de ces informations.</p>
+
+        <h2>3. Ce que voient les appareils à portée Bluetooth et Wi-Fi</h2>
+        <ul>
+          <li>Pour établir une communication directe, votre téléphone diffuse périodiquement votre clé publique et votre surnom aux appareils Hopla situés dans le rayon de portée physique.</li>
+          <li>Les échanges privés et les groupes sont intégralement chiffrés de bout en bout : les appareils intermédiaires qui relaient les paquets dans le réseau maillé ne peuvent en aucun cas déchiffrer le contenu des messages.</li>
+          <li>Les salons publics (ex. le salon « Autour de moi ») sont par définition diffusés à tous les récepteurs à proximité.</li>
+        </ul>
+
+        <h2>4. Ce que reçoivent nos serveurs</h2>
+        <ul>
+          <li><b>Signalements d'abus et modération :</b> Lorsque vous choisissez de signaler un comportement abusif, les éléments transmis (identifiant de la personne signalée, motif, texte et éventuels extraits de messages choisis par vous) sont envoyés de manière sécurisée pour analyse sous 24 heures et bannissement décentralisé.</li>
+          <li><b>Canaux officiels certifiés :</b> Lors de l'acquisition d'un canal certifié d'événement, le reçu d'achat fourni par Apple et la clé publique du canal sont enregistrés pour émettre le certificat cryptographique.</li>
+          <li><b>Liste de bannissement publique :</b> Lorsque l'appareil retrouve un accès à Internet, il télécharge une liste signée des identifiants bannis pour protéger la communauté.</li>
+        </ul>
+        <p><b>Nous ne vendons, ne louons et ne transférons aucune donnée à des courtiers publicitaires ou tiers commerciaux.</b></p>
+
+        <h2>5. Autorisations requises (Permissions iOS et Android)</h2>
+        <ul>
+          <li><b>Bluetooth &amp; Réseau local :</b> Nécessaires pour découvrir les téléphones voisins et relayer les paquets de messages sans connexion Internet.</li>
+          <li><b>Microphone et Caméra :</b> Uniquement sollicités lors de vos appels vocaux/vidéo, de l'enregistrement de mémos vocaux ou du scan d'un code QR d'ami.</li>
+          <li><b>Photos :</b> Uniquement pour les images que vous décidez explicitement d'envoyer dans une discussion.</li>
+        </ul>
+
+        <h2>6. Sécurité cryptographique</h2>
+        <p>Hopla applique les algorithmes de cryptographie asymétrique et symétrique les plus rigoureux : signatures Ed25519, échange de clés X25519 et chiffrement authentifié ChaCha20-Poly1305. Toutes les communications serveur administratives s'effectuent exclusivement via HTTPS / TLS 1.3.</p>
+
+        <h2>7. Vos droits (Loi 25 du Québec, LPRPDE, RGPD)</h2>
+        <p>Conformément aux lois applicables sur la protection des données personnelles, vous bénéficiez d'un droit d'accès, de rectification et d'effacement pour toute information transmise (limitée aux signalements). Toute demande peut être adressée à <a href="mailto:support@vsptech.host">support@vsptech.host</a>.</p>
+      </div>
+
+      <!-- SECTION ANGLAISE -->
+      <div id="section-en" class="lang-section">
+        <p class="muted">Hopla, published by VSP TECH · Last updated: October 24, 2026</p>
+        
+        <div class="note">
+          <b>In short:</b> No accounts, no phone numbers, no ads, no analytics, no third-party trackers. Your messages are end-to-end encrypted and exist only on your physical devices. Our servers never receive your private messages.
+        </div>
+
+        <h2>1. Who We Are</h2>
+        <p>Hopla is developed and published by <b>VSP TECH</b>, Québec, Canada.<br>
+        Official contact email: <a href="mailto:support@vsptech.host">support@vsptech.host</a>.</p>
+
+        <h2>2. Data Stored Locally on Your Device</h2>
+        <p>Hopla operates on a strict local-first architecture. The following data remains strictly on your device:</p>
+        <ul>
+          <li>Your local public profile (nickname, avatar, and chosen theme color).</li>
+          <li>Your private cryptographic identity keys (stored securely in iOS Keychain / Android KeyStore).</li>
+          <li>Your contact list, conversation history, attachments, and voice notes.</li>
+          <li>Your application preferences and Hopla+ purchase entitlements.</li>
+        </ul>
+        <p>We hold no copy or backup of your private communication. Deleting the application or using <i>Settings &gt; Erase everything</i> permanently deletes all data.</p>
+
+        <h2>3. What Nearby Devices See</h2>
+        <ul>
+          <li>To establish peer-to-peer mesh connectivity, your phone announces its public key and chosen display name to other Hopla devices within physical radio range.</li>
+          <li>Private chats and group discussions are fully end-to-end encrypted: relaying nodes cannot read or inspect relayed payloads.</li>
+          <li>Open public rooms (such as "Around me") are broadcast to anyone within physical radio range.</li>
+        </ul>
+
+        <h2>4. Data Received by Our Infrastructure</h2>
+        <ul>
+          <li><b>Abuse Reports &amp; Moderation:</b> When you submit a user report, the data provided (reported user identifier, reason, and attached message excerpts) is processed within 24 hours to enforce community safety and signed network bans.</li>
+          <li><b>Verified Official Channels:</b> In-app purchases for official channels transmit the store receipt and organizer public key to sign the cryptographic channel certificate.</li>
+          <li><b>Signed Ban List:</b> When online, devices download our cryptographically signed ban list to filter abusive nodes from the decentralized mesh.</li>
+        </ul>
+        <p><b>We never sell, rent, or monetize your data. We do not run ads or third-party tracking SDKs.</b></p>
+
+        <h2>5. Device Permissions</h2>
+        <ul>
+          <li><b>Bluetooth &amp; Local Network:</b> Required to discover nearby peer devices and relay offline mesh messages without an Internet connection.</li>
+          <li><b>Camera &amp; Microphone:</b> Used strictly when initiating audio/video calls, recording voice messages, or scanning contact QR codes.</li>
+          <li><b>Photo Library:</b> Accessed solely when you select media to send in a conversation.</li>
+        </ul>
+
+        <h2>6. Cryptographic Architecture</h2>
+        <p>All private messages are signed with Ed25519 and encrypted using X25519 key agreements paired with ChaCha20-Poly1305 authenticated encryption. Administrative server endpoints strictly enforce HTTPS / TLS 1.3.</p>
+
+        <h2>7. Legal Compliance &amp; Rights</h2>
+        <p>You retain full rights under Québec's Law 25, Canada's PIPEDA, and the GDPR regarding access and deletion of any data held (limited to abuse reports). Inquiries can be submitted to <a href="mailto:support@vsptech.host">support@vsptech.host</a>.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 VSP TECH. All rights reserved. Hopla Messenger.</p>
+  </footer>
+
+  <script>
+    let currentLang = 'fr';
+    function toggleLang() {
+      currentLang = currentLang === 'fr' ? 'en' : 'fr';
+      document.getElementById('section-fr').classList.toggle('active', currentLang === 'fr');
+      document.getElementById('section-en').classList.toggle('active', currentLang === 'en');
+      document.getElementById('pageTitle').textContent = currentLang === 'fr' ? 'Politique de Confidentialité' : 'Privacy Policy';
+      document.documentElement.lang = currentLang;
+    }
+  </script>
+</body>
+</html>

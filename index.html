@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hopla · La messagerie sans Internet</title>
+  <meta name="description" content="Hopla : discutez, partagez des photos et appelez sans Internet, par Bluetooth et Wi-Fi décentralisé.">
+  <link rel="icon" href="hopla_mark.png">
+  <style>
+    :root {
+      --ink: #0e0b1f;
+      --mist: #f7f5ff;
+      --violet: #6c4dff;
+      --violet-dark: #5336df;
+      --line: #e6e1fa;
+      --muted: #5d5a73;
+      --card-bg: #ffffff;
+      --gradient: linear-gradient(135deg, #6c4dff 0%, #ff3d8b 55%, #ffb020 100%);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --ink: #f1eeff;
+        --mist: #0b0918;
+        --line: #272147;
+        --muted: #b4afcf;
+        --card-bg: #141126;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--mist);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--gradient);
+      color: #fff;
+      padding: 50px 20px 70px;
+      text-align: center;
+      position: relative;
+    }
+    .container { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 24px;
+      font-weight: 800;
+      margin-bottom: 24px;
+    }
+    .brand img { width: 44px; height: 44px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+    h1 {
+      font-size: clamp(32px, 5vw, 48px);
+      font-weight: 900;
+      line-height: 1.15;
+      margin-bottom: 16px;
+      letter-spacing: -0.5px;
+    }
+    .subtitle {
+      font-size: clamp(18px, 2.5vw, 22px);
+      max-width: 680px;
+      margin: 0 auto 32px;
+      opacity: 0.95;
+      font-weight: 400;
+    }
+    .badges {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .badge-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #ffffff;
+      color: #0e0b1f;
+      padding: 12px 24px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 15px;
+      text-decoration: none;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .badge-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.22);
+    }
+    main { padding: 60px 0; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin-bottom: 60px;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.03);
+    }
+    .card-icon {
+      font-size: 32px;
+      margin-bottom: 16px;
+      display: inline-block;
+    }
+    .card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: var(--ink);
+    }
+    .card p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+    .banner {
+      background: var(--card-bg);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 40px;
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    .banner h2 { font-size: 28px; margin-bottom: 14px; }
+    .banner p { color: var(--muted); max-width: 650px; margin: 0 auto; font-size: 16px; }
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    footer nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+    footer a {
+      color: var(--violet);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="brand">
+        <img src="hopla_mark.png" alt="Hopla Icon">
+        <span>Hopla</span>
+      </div>
+      <h1>La messagerie qui marche sans Internet</h1>
+      <p class="subtitle">Discutez, partagez des photos et appelez les gens autour de vous directement par Bluetooth et Wi-Fi maillé. Sans carte SIM, sans serveur, sans abonnement.</p>
+      <div class="badges">
+        <a class="badge-btn" href="privacy/">
+          🔒 Découvrir la politique de confidentialité
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="grid">
+        <div class="card">
+          <div class="card-icon">📡</div>
+          <h3>Réseau Maillé Hors-Ligne</h3>
+          <p>Les téléphones se connectent directement de proche en proche via Bluetooth Low Energy et Wi-Fi pair-à-pair. Chaque téléphone relaie les messages chiffrés des autres.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🔐</div>
+          <h3>Chiffrement de bout en bout</h3>
+          <p>Tous les messages privés et appels sont signés et chiffrés avec les protocoles Ed25519 et ChaCha20-Poly1305. Seul le destinataire peut les lire.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🚫</div>
+          <h3>Zéro Compte, Zéro Serveur</h3>
+          <p>Ni numéro de téléphone, ni adresse courriel, ni mot de passe. Aucune donnée n'est stockée sur un serveur central.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🏕️</div>
+          <h3>Partout où le réseau tombe</h3>
+          <p>Parfait en festival, camping, randonnée en forêt, croisière, avion, zone blanche ou pendant une panne générale de courant et de télécommunications.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📞</div>
+          <h3>Appels Audio et Vidéo P2P</h3>
+          <p>Passez des appels vocaux directement par Bluetooth et des appels audio/vidéo HD en Wi-Fi direct sans consommer le moindre mégaoctet de forfait.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🛡️</div>
+          <h3>Tolérance Zéro &amp; Sécurité</h3>
+          <p>Blocage et signalement instantanés en un geste, modération décentralisée et respect strict de la vie privée.</p>
+        </div>
+      </div>
+
+      <div class="banner">
+        <h2>Développé par VSP TECH</h2>
+        <p>Hopla est un produit conçu au Québec (Canada) par l'équipe VSP TECH, garantissant le respect de la Loi 25 sur la protection des données personnelles, du RGPD et des standards stricts de l'App Store d'Apple.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <nav>
+        <a href="privacy/">Confidentialité (Privacy Policy)</a>
+        <a href="terms/">Conditions d'utilisation (Terms)</a>
+        <a href="child-safety/">Protection des mineurs (Child Safety)</a>
+        <a href="support/">Support &amp; Contact</a>
+      </nav>
+      <p>&copy; 2026 VSP TECH. Tous droits réservés. Hopla Messenger.</p>
+    </div>
+  </footer>
+</body>
+</html>

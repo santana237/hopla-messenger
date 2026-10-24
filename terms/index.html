@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Conditions d'Utilisation · Hopla</title>
+  <link rel="icon" href="../hopla_mark.png">
+  <style>
+    :root {
+      --ink: #0e0b1f; --mist: #f7f5ff; --violet: #6c4dff; --line: #e6e1fa; --muted: #5d5a73; --card-bg: #ffffff;
+      --gradient: linear-gradient(120deg, #6c4dff, #ff3d8b 60%, #ffb020);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --ink: #f1eeff; --mist: #0b0918; --line: #272147; --muted: #b4afcf; --card-bg: #141126; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: var(--ink); background: var(--mist); }
+    header { background: var(--gradient); color: #fff; }
+    .top { max-width: 860px; margin: 0 auto; padding: 24px 20px 32px; }
+    .brand-bar { display: flex; align-items: center; justify-content: space-between; }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 800; font-size: 22px; color: #fff; text-decoration: none; }
+    .brand img { width: 36px; height: 36px; border-radius: 8px; }
+    .lang-toggle { color: #fff; font-size: 14px; font-weight: 700; cursor: pointer; background: rgba(255,255,255,0.22); border: 1px solid rgba(255,255,255,0.3); padding: 6px 14px; border-radius: 999px; }
+    h1 { font-size: 32px; line-height: 1.2; margin: 20px 0 6px; }
+    nav { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 18px; }
+    nav a { color: #fff; text-decoration: none; font-size: 14px; font-weight: 600; padding: 6px 14px; border-radius: 999px; background: rgba(255,255,255,0.16); }
+    nav a.active { background: #fff; color: var(--ink); }
+    main { max-width: 860px; margin: 0 auto; padding: 30px 20px 60px; }
+    .content-box { background: var(--card-bg); border: 1px solid var(--line); border-radius: 20px; padding: 40px; }
+    h2 { font-size: 22px; margin: 30px 0 10px; color: var(--ink); border-bottom: 2px solid var(--line); padding-bottom: 6px; }
+    h2:first-of-type { margin-top: 10px; }
+    .note { border: 1px solid var(--line); border-radius: 14px; padding: 16px 20px; background: rgba(108,77,255,0.08); margin: 20px 0; }
+    .muted { color: var(--muted); font-size: 14px; }
+    ul { margin: 12px 0 20px 24px; }
+    li { margin: 6px 0; }
+    a { color: var(--violet); }
+    footer { border-top: 1px solid var(--line); padding: 30px 20px; text-align: center; font-size: 14px; color: var(--muted); }
+    .lang-section { display: none; }
+    .lang-section.active { display: block; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="top">
+      <div class="brand-bar">
+        <a href="../" class="brand">
+          <img src="../hopla_mark.png" alt="Hopla Icon">
+          <span>Hopla</span>
+        </a>
+        <button id="langBtn" class="lang-toggle" onclick="toggleLang()">English / Français</button>
+      </div>
+      <h1 id="pageTitle">Conditions d'Utilisation</h1>
+      <nav>
+        <a href="../">Accueil</a>
+        <a href="../privacy/">Confidentialité</a>
+        <a href="./" class="active">Conditions</a>
+        <a href="../child-safety/">Protection des mineurs</a>
+        <a href="../support/">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="content-box">
+      <div id="section-fr" class="lang-section active">
+        <p class="muted">Hopla, éditée par VSP TECH · Dernière mise à jour : 24 octobre 2026</p>
+        <div class="note">
+          <b>Tolérance Zéro :</b> Hopla applique une politique de tolérance zéro absolue envers tout contenu répréhensible, harcèlement, escroquerie ou contenu illégal. Tout contrevenant est banni de manière permanente du réseau via révocation de signature cryptographique.
+        </div>
+
+        <h2>1. Acceptation des conditions</h2>
+        <p>En téléchargeant ou en utilisant l'application Hopla, vous acceptez sans réserve les présentes conditions d'utilisation ainsi que notre <a href="../privacy/">Politique de Confidentialité</a>. Sur iOS, le <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">Contrat de licence d'utilisateur final standard d'Apple (EULA)</a> s'applique également de plein droit.</p>
+
+        <h2>2. Âge d'utilisation</h2>
+        <p>L'utilisation de Hopla est réservée aux personnes âgées d'au moins 13 ans (ou l'âge de la majorité numérique en vigueur dans votre juridiction).</p>
+
+        <h2>3. Règles et comportements interdits</h2>
+        <p>Il est formellement interdit d'utiliser Hopla pour diffuser :</p>
+        <ul>
+          <li>Tout contenu à caractère pédopornographique, exploitation de mineurs ou mise en danger d'enfants.</li>
+          <li>Des menaces, propos haineux, harcèlement, intimidation ou incitation à la haine/violence.</li>
+          <li>Des tentatives d'escroquerie, diffusion de logiciels malveillants ou usurpation d'identité.</li>
+        </ul>
+
+        <h2>4. Pas un substitut aux services d'urgence</h2>
+        <p>Hopla fonctionne de pair à pair sans réseau centralisé. La remise des messages dépend de la présence d'autres utilisateurs à portée. Hopla ne constitue pas un service de secours officiel : en situation d'urgence vitale, composez toujours le 911 ou votre numéro d'urgence local.</p>
+
+        <h2>5. Droit applicable</h2>
+        <p>Les présentes conditions sont régies par les lois applicables dans la province de Québec et les lois fédérales du Canada. Contact : <a href="mailto:support@vsptech.host">support@vsptech.host</a>.</p>
+      </div>
+
+      <div id="section-en" class="lang-section">
+        <p class="muted">Hopla, published by VSP TECH · Last updated: October 24, 2026</p>
+        <div class="note">
+          <b>Zero Tolerance:</b> Hopla maintains a strict zero-tolerance policy against abusive behavior, objectionable content, harassment, or unlawful acts. Violators are subject to permanent mesh network bans via cryptographically signed lists.
+        </div>
+
+        <h2>1. Agreement to Terms</h2>
+        <p>By downloading or accessing Hopla, you agree to these Terms and our <a href="../privacy/">Privacy Policy</a>. For iOS users, Apple's <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">Standard EULA</a> also applies.</p>
+
+        <h2>2. Eligibility</h2>
+        <p>You must be at least 13 years old to use Hopla. If you are under the age of majority, parental permission is required.</p>
+
+        <h2>3. Prohibited Content &amp; Conduct</h2>
+        <p>The following activities are strictly forbidden:</p>
+        <ul>
+          <li>Any sexual exploitation, grooming, or endangering of minors.</li>
+          <li>Hate speech, harassment, stalking, bullying, or threats of violence.</li>
+          <li>Scams, phishing, malicious code, or spoofing official organizations.</li>
+        </ul>
+
+        <h2>4. Non-Emergency Disclaimer</h2>
+        <p>Hopla relies on physical proximity and local peer batteries. Message delivery is not guaranteed. Do not rely on Hopla for life-critical emergencies; contact 911 or emergency services directly.</p>
+
+        <h2>5. Governing Law</h2>
+        <p>These terms are governed by the laws of Québec and Canada. Contact: <a href="mailto:support@vsptech.host">support@vsptech.host</a>.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 VSP TECH. All rights reserved. Hopla Messenger.</p>
+  </footer>
+
+  <script>
+    let currentLang = 'fr';
+    function toggleLang() {
+      currentLang = currentLang === 'fr' ? 'en' : 'fr';
+      document.getElementById('section-fr').classList.toggle('active', currentLang === 'fr');
+      document.getElementById('section-en').classList.toggle('active', currentLang === 'en');
+      document.getElementById('pageTitle').textContent = currentLang === 'fr' ? "Conditions d'Utilisation" : "Terms of Use";
+      document.documentElement.lang = currentLang;
+    }
+  </script>
+</body>
+</html>
